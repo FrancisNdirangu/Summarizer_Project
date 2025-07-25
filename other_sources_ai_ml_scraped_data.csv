@@ -1,0 +1,420 @@
+title,content,url
+How to Balance the Five Analytic Dimensions - KDnuggets,"When developing a solution one has to consider data complexity, speed, analytic complexity, accuracy & precision, and data size. It is not possible to best in all categories, but it is necessary to understand the trade-offs.
+By Damian R. Mingle,(WPC Healthcare).
+So many data scientists select an analytic technique in hopes of achieving a magical solution, but in the end, the solution simply may not even be possible due to other limiting factors. It is important for organizations working with analytic capabilities to understand the various constraints of implementation most real-world applications will encounter. When developing a solution one has to consider: data complexity, speed, analytic complexity, accuracy & precision, and data size. Data Scientists, nor the organizations they work for, will be able to be the best in each category simultaneously; however, it will prove necessary to understand the trade-offs of each.
+
+It is important to know as much as possible about the data. Practically, this looks like understanding the data type, formal complexity measures, tab measures of overlap and linear separability, number of dimensions/columns, and linkages between data sets. For example, one must be able to link up healthcare remittances to paid claims that come in all flavors: fully paid, partially paid, and denied over long periods of time. These linkages can be extremely complex.
+
+The speed at which an analytic outcome must be produced (e.g. near real-time, hourly, daily), or the time it takes to develop and implement the analytic solution, is another key consideration. This particular dimension provides a lot of angst for most Data Scientists, primarily because they generally want to come up with an optimal solution regardless of time. However, we can all agree that if an enterprise needs to deploy new predictions every 15 minutes, but it takes 1.5 hours to retrain the algorithm, then it will not be successful.
+
+Algorithm complexity is measured as complexity class and execution resources. This dimension could be limiting if the complexity needs to be low in order for the business to grasp what is going on. Clearly this will limit a Data Scientist's ability to create an optimal outcome. Some industries prefer lower quality prediction if they receive more understanding about the contributing factors to a prediction; this is true in the healthcare industry. A great example of this is the Netflix $1 Million Challenge. A team of Data Scientists put in over 2,000 hours of work to come up with the combination of 107 algorithms that won first place by besting Netflix own algorithm by 10%. However, Netflix never implemented the full benefit of the first-place solution due to the engineering effort needed to bring it into a production environment.
+
+Most businesses do not understand how to nuance when it comes to predictive accuracy; however, it will be essential for a Data Scientist to help the organization move beyond the simple notion of accuracy. Obviously we all want to hit the proverbial target. At least directionally, as a Data Scientist, you will want to steer the conversation to something more useful, like an algorithm that produces “high accuracy/low precision” or “high accuracy/high precision”. It usually proves beneficial to the business audience to distinguish what is meant by accuracy and precision as they appear to be close in meaning. Help them see that “accuracy” refers to the closeness of a predicted value to the actual value. A good example of this: a data science model predicted the weight of a package to be 19 lbs, but the actual weight of the package is 28 lbs. This would demonstrate “low accuracy”. “Precision” on the other hand refers to the closeness of two or more measurements to each other. For example, if a Data Scientist predicts the value of a package to be 19 lbs - over 5 separate iterations - then it is said to be “precise”.  From a business perspective, it is critical to note that a data science model can be extremely precise, but inaccurate in its prediction.
+
+The size of the data set is viewed as the number of rows and the number of fields. Many organizations may not understand when dealing with prediction that the more data you have, the better the output. However, there may be a point that the size of data goes beyond the typical tools skill set of the average Data Scientist. In fact, many of the classic algorithms one might use in smaller datasets may simply vanish as an option once one begins navigating in bigger data waters. As a Data Scientist, it is worth investigating the limits of your skill and tools before you get in front of an executive audience; they are counting on you to be the expert, as well they should.
+
+In almost every case, the business user will dictate one or more constraints in the problem the Data Scientist will face. Once a single dimension is fixed then the hard work begins – the development of wanting to know what else can be done with the other dimensions. Take for example a hospital who needs near real-time analytics to help the physicians make clinical decisions: the speed decision is already fixed and trade offs between the other four dimensions must be made. For many Data Scientists, learning what the right balance is will be developed over the course of a career. It is more of an art than a science, but that does not mean you should not devote significant resources to expedite your learning.
+Data Science in the real-world always has to consider the five analytic dimensions; and, Data Scientists should aim to be sure to optimize each dimension for the business it seeks to serve. Whether it is data complexity, analytic complexity, accuracy & precision, speed, or data size, each is important in its own right. As a Data Scientist, it is vital to understand how to guide the business analytically by keeping in balance the five analytic dimensions.
+Bio:Damian R. Mingle, MBA is a Chief Data Scientist at WPC Healthcare and an expert in healthcare analytics.
+Original.
+Related:
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+
+
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+No, thanks!",https://www.kdnuggets.com/2015/09/how-balance-five-analytic-dimensions.html
+How to fix an Unbalanced Dataset - KDnuggets,"We explain several alternative ways to handle imbalanced datasets, including different resampling and ensembling methods with code examples.
+ByWill Badr, Amazon Web Services.
+
+Classification is one of the most common machine learning problems. The best way to approach any classification problem is to start by analyzing and exploring the dataset in what we callExploratoryDataAnalysis(EDA). The sole purpose of this exercise is to generate as many insights and information about the data as possible. It is also used to find any problems that might exist in the dataset. One of the common issues found in datasets that are used for classification isimbalanced classesissue.
+What Is Data Imbalance?
+Data imbalance usually reflects an unequal distribution of classes within a dataset. For example, in a credit card fraud detection dataset, most of the credit card transactions are not fraud and a very few classes are fraud transactions. This leaves us with something like 50:1 ratio between the fraud and non-fraud classes. In this article, I will use the credit card fraud transactions dataset from Kaggle which can be downloaded fromhere.
+First, let’s plot the class distribution to see the imbalance.
+
+As you can see, the non-fraud transactions far outweigh the fraud transactions. If we train a binary classification model without fixing this problem, the model will be completely biased. It also impacts the correlations between features and I will show you how and why later on.
+Now, let’s cover a few techniques to solve the class imbalance problem. A notebook with the complete code can be foundHERE
+
+This is as intuitive as it sounds.Undersamplingis the process where you randomly delete some of the observations from the majority class in order to match the numbers with the minority class. An easy way to do that is shown in the code below:
+
+Undersampling the majority class
+After undersampling the dataset, I plot it again and it shows an equal number of classes:
+
+Balanced Dataset (Undersampling)
+The second resampling technique is called,Oversampling. This process is a little more complicated than undersampling. It is the process of generating synthetic data that tries to randomly generate a sample of the attributes from observations in the minority class. There are a number of methods used to oversample a dataset for a typical classification problem. The most common technique is calledSMOTE (Synthetic Minority Over-sampling Technique). In simple terms, it looks at the feature space for the minority class data points and considers itsknearest neighbours.
+
+Source:https://imbalanced-learn.readthedocs.io/en/stable/over_sampling.html
+To code this in python, I use a library calledimbalanced-learnor imblearn.The code below shows how to implement SMOTE.
+
+Remember when I said how imbalanced data would affect the feature correlation? Let me show you the correlation before and after treating the imbalanced class.
+The code below plots the correlation matrix between all the features.
+
+
+Notice that the feature correlation is much more obvious now. Before fixing the imbalance problem, most of the features did not show any correlation which would definitely have impacted the performance of the model. Sincethe feature correlation really mattersto the overall model’s performance, it is important to fix the imbalance as it will also impact the ML model performance.
+In Machine Learning, ensemble methods use multiple learning algorithms and techniques to obtain better performance than what could be obtained from any of the constituent learning algorithms alone. (Yes, just like a democratic voting system). When using ensemble classifiers, bagging methods become popular and it works by building multiple estimators on a different randomly selected subset of data. In the scikit-learn library, there is an ensemble classifier namedBaggingClassifier. However, this classifier does not allow to balance each subset of data. Therefore, when training on imbalanced data set, this classifier will favour the majority classes and create a biased model.
+In order to fix this, we can useBalancedBaggingClassifierfromimblearnlibrary. It allows the resampling of each subset of the dataset before training each estimator of the ensemble. Therefore,BalancedBaggingClassifiertakes the same parameters as the scikit-learn BaggingClassifierin addition to two other parameters, sampling_strategy and replacement which control the behaviour of the random sampler. Here is some code that shows how to do this:
+
+Train Imbalanced Dataset using Ensembling Samplers
+That way, you can train a classifier that will handle the imbalance without having to undersample or oversample manually before training.
+In Conclusion, everyone should know that the overall performance of ML models built on imbalanced datasets, will be constrained by its ability to predict rare and minority points. Identifying and resolving the imbalance of those points is crucial to the quality and performance of the generated models.
+Original. Reposted with permission.
+Bio:Will Badris an experienced Senior Technical Account Manager with a demonstrated history of working in the information technology and services industry. Focusing on the Artificial Intelligence and Machine Learning Profile and spreading the innovation culture.
+Resources:
+Related:
+
+
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+
+
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+No, thanks!",https://www.kdnuggets.com/2019/05/fix-unbalanced-dataset.html
+LangChain 101: Build Your Own GPT-Powered Applications - KDnuggets,"LangChain is a Python library that helps you build GPT-powered applications in minutes. Get started with LangChain by building a simple question-answering app.
+Image by Author
+The success of ChatGPT and GPT-4 have shown how large language models trained with reinforcement can result in scalable and powerful NLP applications.
+However, the usefulness of the response depends on the prompt, which led to users exploring the prompt engineering space. In addition, most real-world NLP use cases need more sophistication than a single ChatGPT session. And here’s where a library like LangChain can help!
+LangChainis a Python library that helps you leverage large language models to build custom NLP applications.
+In this guide, we’ll explore what LangChain is and what you can build with it. We’ll also get our feet wet by building a simple question-answering app with LangChain.
+Let's get started!
+
+
+LangChain, created byHarrison Chase, is a Python library that provides out-of-the-box support to build NLP applications using LLMs. You can connect to various data and computation sources, and build applications that perform NLP tasks on domain-specific data sources, private repositories, and much more.
+As of writing this article (in March 2023), the LangChain GitHub repository has over 14,000 stars with more than 270 contributors from across the world.
+LangChain Github Star History | Generated onstar-history.com
+Interesting applications you can build using LangChain include (but are not limited to):
+
+
+Next let's take a look at some of the modules in LangChain:
+Image by Author
+
+
+LLM is the fundamental component of LangChain. It is essentially a wrapper around a large language model that helps use the functionality and capability of a specific large language model.
+
+
+As mentioned, LLM is the fundamental unit in LangChain. However, as the name LangChain suggests, you can chain together LLM calls depending on specific tasks.
+For example, you may need to get data from a specific URL, summarize the returned text, and answer questions using the generated summary.
+The chain can also be simple. You may need to read in user input which is then used to construct the prompt. Which can then be used to generate a response.
+Image by Author
+
+
+Prompts are at the core of any NLP application. Even in a ChatGPT session, the answer is only as helpful as the prompt. To that end, LangChain provides prompt templates that you can use to format inputs and a lot of other utilities.
+
+
+LangChain’sDocument LoadersandUtilsmodules facilitate connecting to sources of data and computation, respectively.
+Suppose you have a large corpus of text on economics that you'd like to build an NLP app over. Your corpus may be a mix of text files, PDF documents, HTML web pages, images, and more. Currently, document loaders leverage the Python libraryUnstructuredto convert these raw data sources into text that can be processed.
+The utils module provides Bash and Python interpreter sessions amongst others. These are suitable for applications where it’ll help to interact directly with the underlying system. Or when we need code snippets to compute a specific mathematical quantity or solve a problem instead of computing answers once.
+
+
+We mentioned that “chains” can help chain together a sequence of LLM calls. In some tasks, however, the sequence of calls is often not deterministic. And the next step will likely be dependent on the user input and the response in the previous steps.
+For such applications, the LangChain library provides “Agents” that can take actions based on inputs along the way instead of a hardcoded deterministic sequence.
+In addition to the above, LangChain also offers integration with vector databases and has memory capabilities for maintaining state between LLM calls, and much more.
+
+
+Now that we’ve gained an understanding of LangChain, let’s build a question-answering app using LangChain in five easy steps:
+
+
+Before we get coding, let’s set up the development environment. I assume you already have Python installed in your working environment.
+You can now install the LangChain library using pip:
+
+As we’ll be using OpenAI’s language models, we need to install the OpenAI SDK as well:
+
+
+Next, sign into your OpenAI account. Navigate to account settings >View API Keys. Generate a secret key and copy it.
+In your Python script, use theosmodule and tap into the dictionary of environment variables,os.environ. Set the ""OPENAI_API_KEY"" to your to the secret API key that you just copied:
+
+
+Now that we’ve installed the required libraries, let's see how to make a simple LLM call using LangChain.
+To do so, let’s import the OpenAI wrapper. In this example, we’ll use the text-davinci-003 model:
+
+
+“text-davinci-003: Can do any language task with better quality, longer output, and consistent instruction-following than the curie, babbage, or ada models. Also supportsinsertingcompletions within text.” –OpenAI Docs
+
+Let's define a question string and generate a response:
+
+
+
+Let's ask another question on the top resources to learn a new programming language, say, Golang:
+
+
+While this works fine for starters, it quickly becomes repetitive when we’re trying to curate a list of resources to learn a list of programming languages and tech stacks.
+Here’s where prompt templates come in handy. You can create a template that can be formatted using one or more input variables.
+We can create a simple template to get the top k resources to learn any tech stack. Here, we use thekandthisasinput_variables:
+
+
+We now have an LLM and a prompt template that we can reuse across multiple LLM calls.
+
+Let’s go ahead and create an LLMChain:
+
+You can now pass in the inputs as a dictionary and run the LLM chain as shown:
+
+
+
+And that’s a wrap! You know how to use LangChain to build a simple Q&A app. I hope you’ve gained a cursory understanding of LangChain’s capabilities. As a next step, try exploring LangChain to build more interesting applications. Happy coding!
+
+
+Bala Priya Cis a technical writer who enjoys creating long-form content. Her areas of interest include math, programming, and data science. She shares her learning with the developer community by authoring tutorials, how-to guides, and more.
+
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+No, thanks!",https://www.kdnuggets.com/2023/04/langchain-101-build-gptpowered-applications.html
+The Effects of ChatGPT in Schools and Why It’s Getting Banned - KDnuggets,"Many schools are banning ChatGPT for plagiarism, accuracy and privacy concerns. However, the chatbot could help students and teachers with the right application.
+Image by Editor
+ChatGPT has generated excitement and concern in equal measure across many use cases. One of its most prominent — and controversial — is its use in schools. As ChatGPT’s popularity continues to skyrocket, many school districts are banning it, but its potential positives for education are growing, too.
+
+
+It’s important to understand both sides of this issue. To start, here are some of the most significant reasons behind school bans on ChatGPT.
+
+
+The most prevalent concern over ChatGPT in schools is its tendency towards plagiarism. Like all AI models, ChatGPT doesn’t necessarily create new content but rather compiles, summarizes and rephrases existing work. Students can easily use it to finish their work for them, to the same effect as stealing someone else’s paper and turning it in.
+Many toolscan detect ChatGPT-generated content, so catching students trying to cheat is relatively easy. However, even if students only use it as a research tool, they may be unable to find the original sources for the information they get from ChatGPT, leading to accidental plagiarism. The lack of consent from the people behind the model’s training data introduces further plagiarism concerns.
+
+
+Using ChatGPT in schools may also hinder the quality of students’ education. The answers ChatGPT providesare not always accurate, even if they’re convincing, which could lead students to believe misleading or outright false information.
+These factual inaccuracies may be harder to detect than plagiarism, especially if they’re about topics teachers are less familiar with. As a result, using it in research or as a teaching tool could spread misinformation.
+
+
+ChatGPT also carries some privacy concerns. The platform collects a considerable amount of user data, and its privacy controls are minimal and not immediately evident. Considering the education sector was themost likely to suffer ransomware attackslast year, that’s a significant issue.
+Students may not know how much personal information they’re giving away or how the site uses it when using ChatGPT. That puts a lot of highly sensitive data at risk.
+
+
+Despite these concerns, there are several positives to ChatGPT in schools. Here’s how the education system can use the chatbot to benefit students and teachers alike.
+
+
+Teachers and other staff members can use ChatGPT to automate some administrative tasks like scheduling and data entry. This automation would give them more time to spend with students, improving educational outcomes.
+Nearly50% of independent schoolsuse five or more online solutions to manage administrative duties. That creates a lot of disconnect, inefficiency and unnecessary costs. Streamlining these behind-the-scenes workflows with tools like ChatGPT would help minimize that time and expense.
+
+
+Educators could also use ChatGPT to make lessons more engaging for students. Studies have found that studentsare more engaged and comfortablewhen technology plays a role in their learning, and tech as new and exciting as ChatGPT could be particularly useful.
+Students could use ChatGPT to form the outlines for research papers they flesh out themselves, helping them learn what makes a quality essay. Alternatively, teachers could use ChatGPT as a way to show how AI works or to highlight the importance of watching for bias and misinformation in online resources.
+
+
+Schools may also consider teaching students how to use ChatGPT and similar tools. Generative AI will doubtlessly play a role in many future businesses, so learning how to use AI responsibly is an essential skill for the upcoming generation.
+Some experts predict58% of the current workforcewill need upskilling to work effectively as new technologies change their roles and responsibilities. Education systems can get ahead of that trend by equipping students with AI literacy before they enter the workforce. ChatGPT’s ease of use makes it an ideal tool to that end.
+
+
+Generative AI platforms like ChatGPT will change how many industries operate. The same is likely true for education, whether that means adopting new policies to restrict the technology or embracing it.
+Using ChatGPT in schools has many advantages, but significant obstacles remain. If school systems can approach it with care and consider these downsides, they can capitalize on the positives to improve future education.April Milleris managing editor of consumer technology atReHackMagazine. She have a track record of creating quality content that drives traffic to the publications I work with.
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+No, thanks!",https://www.kdnuggets.com/2023/06/effects-chatgpt-schools-getting-banned.html
+Content-based Recommender Using Natural Language Processing (NLP) - KDnuggets,"A guide to build a content-based movie recommender model based on NLP.
+ByJames Ng, Data Science, Project Management
+
+
+When we provide ratings for products and services on the internet, all the preferences we express and data we share (explicitly or not), are used to generate recommendations by recommender systems. The most common examples are that of Amazon, Google and Netflix.
+There are 2 types of recommender systems:
+
+In this article, I have combined movie attributes such as genre, plot, director and main actors to calculate its cosine similarity with another movie. The dataset is IMDB top 250 English movies downloaded fromdata.world.
+
+Ensure that theRapid Automatic Keyword Extraction(RAKE) library has been installed (or pip install rake_nltk).
+
+Exploring the dataset, there are 250 movies (rows) and 38 attributes (columns). However, only 5 attributes are useful: ‘Title’, ’Director’, ’Actors’, ’Plot’, and ’Genre’. Below shows a list of 10 popular directors.
+
+
+
+
+Firstly the data has to be pre-processed using NLP to obtain only one column that contains all the attributes (in words) of each movie. After that, this information is converted into numbers by vectorization, where scores are assigned to each word. Subsequently cosine similarities can be calculated.
+I used the Rake function to extract the most relevant words from whole sentences in the ‘Plot’ column. In order to do this, I applied this function to each row under the ‘Plot’ column and assigned the list of key words to a new column ‘Key_words’.
+
+
+
+The names of actors and directors are transformed into unique identity values. This is done by merging all first and last names into one word, so that Chris Evans and Chris Hemsworth will appear different (if not, they will be 50% similar because they both have ‘Chris’). Every word needs to be converted to lowercase to avoid duplications.
+
+
+
+
+After data pre-processing, these 4 columns ‘Genre’, ‘Director’, ‘Actors’ and ‘Key_words’ are combined into a new column ‘Bag_of_words’. The final DataFrame has only 2 columns.
+
+
+
+
+The recommender model can only read and compare a vector (matrix) with another, so we need to convert the ‘Bag_of_words’ into vector representation usingCountVectorizer, which is a simple frequency counter for each word in the ‘Bag_of_words’ column. Once I have the matrix containing the count for all words, I can apply the cosine_similarity function to compare similarities between movies.
+
+
+
+
+
+Next is to create a Series of movie titles, so that the series index can match the row and column index of the similarity matrix.
+
+
+The final step is to create a function that takes in a movie title as input, and returns the top 10 similar movies. This function will match the input movie title with the corresponding index of the Similarity Matrix, and extract the row of similarity values in descending order. The top 10 similar movies can be found by extracting the top 11 values and subsequently discarding the first index (which is the input movie itself).
+
+Now I am ready to test the model. Let’s input my favourite movie “The Avengers” and see the recommendations.
+
+
+
+
+The model has recommended very similar movies. From my “domain knowledge”, I can see some similarities mainly based on directors and plot. I have already watched most of these recommended movies, and am looking forward to watch those few unseen ones.
+Pythoncodes with inline comments are available on myGitHub, do feel free to refer to them.
+JNYH/movie_recommenderContent-based recommender using Natural Language Processing (NLP). A guide to build a content-based movie recommender...
+Thank you for reading!
+Bio:James Nghas a deep interest in uncovering insights from data, excited about combining hands-on data science, strong business domain knowledge and agile methodologies to create exponential values for business and society. Passionate about improving data fluency and making data easily understood, so that business can make data-driven decisions.
+Original. Reposted with permission.
+Related:
+
+
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+
+
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+No, thanks!",https://www.kdnuggets.com/2019/11/content-based-recommender-using-natural-language-processing-nlp.html
+Task-based effectiveness of basic visualizations - KDnuggets,"This is a summary of a recent paper on an age-old topic: what visualisation should I use? No prizes for guessing “it depends!” Is this the paper to finally settle the age-old debate surrounding pie-charts??
+Task-based effectiveness of basic visualizationsSaket et al.,IEEE Transactions on Visualization and Computer Graphics 2019
+So far this week we’ve seen how to create all sorts of fantastic interactive visualisations, and taken a look at what data analysts actually do when they do ‘exploratory data analysis.’ To round off the week today’s choice is a recent paper on an age-old topic: what visualisation should I use?
+No prizes for guessing “it depends!”
+…the effectiveness of a visualization depends on several factors including task at the hand, and data attributes and datasets visualized.
+Is this the paper to finally settle the age-old debate surrounding pie-charts??
+Saket et al. look at five of the most basic visualisations —bar charts, line charts, pie charts, scatterplots, and tables— and study their effectiveness when presenting modest amounts of data (less than 50 visual marks) across 10 different tasks. The task taxonomy comes from the work ofAmar et al., describing a set of ten low-level analysis tasks that describe users’ activities while using visualization tools.
+If only our users were using SQL and not a visualisation tool :).
+
+
+Two datasets were chosen such that participants would be familiar with the meaning of the data attributes, but not the actual content: a cars dataset with data on 407 new cars, and a movies dataset with details of 335 movies. Both datasets contain a mix on nominal (categorical), ordinal (quantities with a specific range and natural ordering, e.g. movie ratings), and numerical data attributes.
+Following an initial pilot, the study focused in on visualisations containing no more than 50 visual marks (participants found it too time-consuming above this number). Within this constraint visualisations were generated across all give visualisation types using the following pairwise combinations of all the attribute types: nominal * numerical, ordinal * numerical, and numerical * numerical.
+180 Mechanical Turk participants with previous experience of visualisation completed the study. 18 participants were assigned to each of the ten task types, and participants for a given task type answered 30 different questions relating to the task (5 visualisation types x 2 datasets x 3 trials). Example task questions are shown in the figure below. After completing their questions, participants were then asked a set of ranking questions to determine their preferred visualisation type(s) for performing the task.
+
+
+
+Results, aggregated over tasks and datasets, show the Bar Chart is the fastest and most accurate visualization type.
+But to stop there would be to miss the point. Taking into account the accuracy with which users performed a task, the time it took them, and their own stated preferences, here’s a concise summary of how well the different visualisation do on a per-task basis.
+
+Bar charts and tables are the visualisation types most preferred by participants. This holds even though performance when using table is relatively slow and less accurate. If you want the full details, check out the (page-and-a-half-long!) Table 1 in the paper. Cutting to the chase, here’s the condensed advice on selecting a visualisation type:
+If you’re using visualisations to accompany a report or article, you can turn that around and say e.g. “use line charts to support a point about correlation” and so forth. If you just want to present data for readers to explore on their own without a specific a priori task or point to support, bar charts and tables are the go-to visualisation.
+
+So, about those pie-charts…
+…throughout the history of graphical perception research, pie charts have been the subject of passionate arguments for and against their use. Although the current common wisdom among visualization researchers is to avoid them, pie charts continue to be popular in everyday visualizations. Results of our study present a more nuanced view of pie charts.
+Should you use a pie-chart? It depends… they were shown to be competitive on cluster, extremum, filter, range, and retrieval tasks.
+Original. Reposted with permission.
+Related:
+
+
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+
+
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+No, thanks!",https://www.kdnuggets.com/2019/11/task-based-effectiveness-basic-visualizations.html
+Top Machine Learning Papers to Read in 2023 - KDnuggets,"These curated papers would step up your machine-learning knowledge.
+Image bypch.vectoronFreepik
+Machine Learning is a big field with new research coming out frequently. It is a hot field where academia and industry keep experimenting with new things to improve our daily lives.
+In recent years, generative AI has been changing the world due to the application of machine learning. For example, ChatGPT and Stable Diffusion. Even with 2023 dominated by generative AI, we should be aware of many more machine learning breakthroughs.
+Here are the top machine learning papers to read in 2023 so you will not miss the upcoming trends.
+
+
+Singing Voice Beautifying (SVB) is a novel task in generative AI that aims to improve the amateur singing voice into a beautiful one. It’s exactly the research aim ofLiu et al. (2022)when they proposed a new generative model called Neural Singing Voice Beautifier (NSVB).
+The NSVB is a semi-supervised learning model using a latent-mapping algorithm that acts as a pitch corrector and improves vocal tone. The work promises to improve the musical industry and is worth checking out.
+
+
+Deep neural network models have become bigger than ever, and much research has been conducted to simplify the training process. Recent research by the Google team (Chen et al. (2023)) has proposed a new optimization for the Neural Network called Lion (EvoLved Sign Momentum). The method shows that the algorithm is more memory-efficient and requires a smaller learning rate than Adam. It’s great research that shows many promises you should not miss.
+
+
+Time series analysis is a common use case in many businesses; For example, price forecasting, anomaly detection, etc. However, there are many challenges to analyzing temporal data only based on the current data (1D data). That is whyWu et al. (2023)propose a new method called TimesNet to transform the 1D data into 2D data, which achieves great performance in the experiment. You should read the paper to understand better this new method as it would help much future time series analysis.
+
+
+Currently, we are in a generative AI era where many large language models were intensively developed by companies. Mostly this kind of research would not release their model or only be commercially available. However, the Meta AI research group (Zhang et al. (2022)) tries to do the opposite by publicly releasing the Open Pre-trained Transformers (OPT) model that could be comparable with the GPT-3. The paper is a great start to understanding the OPT model and the research detail, as the group logs all the detail in the paper.
+
+
+The generative model is not limited to only generating text or pictures but also tabular data. This generated data is often called synthetic data.  Many models were developed to generate synthetic tabular data, but almost no model to generate relational tabular synthetic data. This is exactly the aim ofSolatorio and Dupriez (2023)research; creating a model called REaLTabFormer for synthetic relational data. The experiment has shown that the result is accurately close to the existing synthetic model, which could be extended to many applications.
+
+
+Reinforcement Learning conceptually is an excellent choice for the Natural Language Processing task, but is it true? This is a question thatRamamurthy et al. (2022)try to answer. The researcher introduces various library and algorithm that shows where Reinforcement Learning techniques have an edge compared to the supervised method in the NLP tasks. It’s a recommended paper to read if you want an alternative for your skillset.
+
+
+Text-to-image generation was big in 2022, and 2023 would be projected on text-to-video (T2V) capability. Research byWu et al. (2022)shows how T2V can be extended on many approaches. The research proposes a new Tune-a-Video method that supports T2V tasks such as subject and object change, style transfer, attribute editing, etc. It’s a great paper to read if you are interested in text-to-video research.
+
+
+Efficient collaboration is the key to success on any team, especially with the increasing complexity within machine learning fields. To nurture efficiency,Peng et al. (2023)present a PyGlove library to share ML ideas easily. The PyGlove concept is to capture the process of ML research through a list of patching rules. The list can then be reused in any experiments scene, which improves the team's efficiency. It’s research that tries to solve a machine learning problem that many have not done yet, so it’s worth reading.
+
+
+ChatGPT has changed the world so much. It’s safe to say that the trend would go upward from here as the public is already in favor of using ChatGPT. However, how is the ChatGPT current result compared to the Human Experts? It’s exactly a question thatGuo et al. (2023)try to answer. The team tried to collect data from experts and ChatGPT prompt results, which they compared. The result shows that implicit differences between ChatGPT and experts were there. The research is something that I feel would be kept asked in the future as the generative AI model would keep growing over time, so it’s worth reading.
+
+
+2023 is a great year for machine learning research shown by the current trend, especially generative AI such as ChatGPT and Stable Diffusion. There is much promising research that I feel we should not miss because it’s shown promising results that might change the current standard. In this article, I have shown you 9 top ML papers to read, ranging from the generative model, time series model to workflow efficiency. I hope it helps.Cornellius Yudha Wijayais a data science assistant manager and data writer. While working full-time at Allianz Indonesia, he loves to share Python and Data tips via social media and writing media.
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+No, thanks!",https://www.kdnuggets.com/2023/03/top-machine-learning-papers-read-2023.html
+Research Papers for NLP Beginners - KDnuggets,"Read research papers on neural models, word embedding, language modeling, and attention & transformers.
+Sincerely Mediavia Unsplash
+If you’re new to the world of data and have a particular interest in NLP (Natural Language Processing), you’re probably looking for resources to help grasp a better understanding.
+You have probably come across so many different research papers and are sitting there confused about which one to choose. Because let’s face it, they’re not short and they do consume a lot of brain power. So it would be smart to choose the right one that will benefit your path to mastering NLP.
+I have done some research and have collected a few NLP research papers that have been highly recommended for newbies in the NLP area and overall NLP knowledge.
+I will break it up into sections so you can go find exactly what you want.
+
+Text Classification from Labeled and Unlabeled Documents using EMby Kamal Nigam, 1999
+This paper is about how you can improve the accuracy of learned text classifiers by augmenting a small number of labeled training documents with a large pool of unlabeled documents.
+Beyond Accuracy: Behavioral Testing of NLP Models with CheckListby Marco Tulio Ribeiro et al., 2020
+In this paper, you will learn more about CheckList, a task-agnostic methodology for testing NLP models as unfortunately some of the most used current approaches overestimate the performance of NLP models.
+
+Natural Language Processing (almost) from Scratchby Ronan Collobert, 2011
+In this paper, you will go through the foundations of NLP - as it states in the title, it is ALMOST from scratch. Topics include Named Entity Recognition, Semantic role labeling, networks, training, and more.
+Understanding LSTM Networksby Christopher Olah, 2015
+Neural Networks are a major part of NLP, therefore having a good understanding of it will benefit you in the long run. In this paper, there is a focus on LSTM networks which are widely used.
+
+Distributed Representations of Words and Phrases and their Compositionalityby Tomas Mikolov, 2013
+Written by Mikolov, who introduced the Skip-gram model for learning high-quality vector representations of words from large amounts of unstructured text data - this paper will present several extensions of the original Skip-gram model.
+Distributed Representations of Sentences and Documentsby Quoc Le and Tomas Mikolov, 2014
+Going into more depth about the two major weaknesses of bag-of-words, the authors introduce Paragraph Vector - which is an unsupervised algorithm that learns fixed-length feature representations from variable-length pieces of text, such as sentences.
+
+Language Models are Unsupervised Multitask Learnersby Alec Radford, 2018
+Natural language processing tasks are normally approached with supervised learning on task-specific datasets. However, Multitask learning is being tested as a promising framework for improving general performance in NLP.
+The Unreasonable Effectiveness of Recurrent Neural Networksby Andrej Karpathy, 2015
+This paper goes back to the start of recurrent neural networks and why they are so effective and robust with code examples to give you a better understanding
+
+BERT: Pre-training of Deep Bidirectional Transformers for Language Understandingby Jacob Devlin et al., 2019
+As you’re learning about machine learning, you have probably heard about BERT - Bidirectional Encoder Representations from Transformers. It is widely used and known for being able to pre-train deep bidirectional representations from unlabeled text. In this paper, you will further understand and learn how to improve your fine-tuning based on BERT.
+Attention is All You Needby Ashish Vaswani et al., 2017
+This paper focuses on the Transformer, solely on attention mechanisms which differ from models which are typically based on complex recurrent or convolutional neural networks. You will learn how Transformer generalizes well to other tasks and may be the better option.
+HuggingFace's Transformers: State-of-the-art Natural Language Processingby Thomas Wolf et al., 2020
+Want to learn more about Transformers which has become the dominant architecture for natural language processing? In this paper, you will learn more about its architecture and how it facilitates the distribution of pre-trained models.
+
+
+Like I said above, I don’t want to overwhelm you with so many different research papers - therefore I have kept it at a minimal level.
+If you know of any that beginners may benefit from, please drop them in the comments so that they can see them. Thank you!
+Nisha Aryais a Data Scientist and Freelance Technical Writer. She is particularly interested in providing Data Science career advice or tutorials and theory based knowledge around Data Science. She also wishes to explore the different ways Artificial Intelligence is/can benefit the longevity of human life. A keen learner, seeking to broaden her tech knowledge and writing skills, whilst helping guide others.
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+Get the FREE ebook 'The Great Big Natural Language Processing Primer' and 'The Complete Collection of Data Science Cheat Sheets' along with the leading newsletter on Data Science, Machine Learning, AI & Analytics straight to your inbox.
+By subscribing you accept KDnuggetsPrivacy Policy
+No, thanks!",https://www.kdnuggets.com/2022/11/research-papers-nlp-beginners.html

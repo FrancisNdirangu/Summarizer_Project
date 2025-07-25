@@ -1,0 +1,301 @@
+channel_name,video_id,title
+3Blue1Brown,3foYyPDp0Ho,"Summer of Math Exposition #4 | Teachers, I'd love to hear from you"
+3Blue1Brown,Dlsa9EBKDGI,Where my explanation of Grover’s algorithm failed
+3Blue1Brown,RQWpF2Gb-gU,But what is quantum computing?  (Grover's Algorithm)
+3Blue1Brown,XX8mjBXBqz8,Testing your intuition for quantum computing
+3Blue1Brown,aQwEJKWATlE,How to measure nearby galaxies
+3Blue1Brown,aw-8BhCilj0,Measuring the distance to Venus without radar
+3Blue1Brown,M6LUPYsjods,Measuring the speed of light using Jupiter's moons
+3Blue1Brown,mHya9J9pkq4,The tragic tale of Guillaume Le Gentil
+3Blue1Brown,C8baNzpnZ7o,Zooming out by powers of 10
+3Blue1Brown,6dTyOl1fmDo,There's more to those colliding blocks that compute pi
+3Blue1Brown,TZAC0WFemvE,When being beautifully wrong leads to discovery
+3Blue1Brown,YP1mMXRCnaI,Why the ancient Greeks rejected heliocentrism
+3Blue1Brown,gzbFNnTCkqQ,How to estimate the distance to the sun
+3Blue1Brown,drmphB3rdHY,How Aristarchus deduced the distance to the moon
+3Blue1Brown,hFMaT9oRbs4,How to measure the universe | The Cosmic Distance Ladder Part 2
+Data School,5xAgKRFvFg0,"Top AI news: ChatGPT undeletes your chats, Copilot security flaw, Veo 3 TV ad"
+Data School,JF8WjK70AEQ,What is Retrieval Augmented Generation (RAG)?
+Data School,TDlGKocbHoc,Jupyter & IPython terminology explained
+Data School,rOKXLCCyWn8,How to keep up with AI in 2025
+Data School,GnN3Lqh3wOU,Build an AI chatbot with Python
+Data School,ChGDJda7usk,Guess the MYSTERY course 🎁
+Data School,mN51Tp02RNk,"Course outline: ""Master Machine Learning with scikit-learn"""
+Data School,ZYJ7OjNobmA,"Course overview: ""Master Machine Learning with scikit-learn"""
+Data School,AZzk8fQVHSU,Introduction to model ensembling
+Data School,47jp10PxzIg,How to save a scikit-learn Pipeline with custom transformers
+Data School,E5zOAtlrQqE,Should I shuffle samples with cross-validation?
+Data School,n21_An7Usyc,Cost-sensitive learning in scikit-learn
+Data School,MtQqYtn-ox0,scikit-learn vs Deep Learning
+Data School,vUSFLs8w_dg,How to read the scikit-learn documentation
+Data School,WkqM0ndr42c,My top 50 scikit-learn tips
+freeCodeCamp.org,HaUe2AN210g,"Enterprise AI Tutorial – Embeddings, RAG, and Multimodal Agents Using Amazon Nova and Bedrock"
+freeCodeCamp.org,ZvZ7gvcmPmI,Learn TypeScript – Crash Course for Beginners
+freeCodeCamp.org,Z_c4byLrNBU,Data Structure and Algorithm Patterns for LeetCode Interviews – Tutorial
+freeCodeCamp.org,clTpnp0TlYg,We are truly in the Hackathon Era – Namanh Kapur interview [Podcast #180]
+freeCodeCamp.org,XSJD5ay1D_8,Data Viz w/ Svelte and D3 Tutorial – Custom and Interactive Data Visualization
+freeCodeCamp.org,0xah5jMflcI,Building ‍Security into AI – Tutorial
+freeCodeCamp.org,ilotANpzN7I,799 rejections... but he got the job! Braydon Coyer developer interview [Podcast #179]
+freeCodeCamp.org,ObiAWFqgpMg,Build and Deploy a Polished AI Project and Get Sales
+freeCodeCamp.org,rhCiuu4AW_w,VGG From Scratch – Deep Learning Theory & PyTorch Implementation (Full Course)
+freeCodeCamp.org,qDtVzumlb8M,Combine Vibe Coding & n8n to Build Real AI Apps
+freeCodeCamp.org,cMOz7Tyq7aE,From freeCodeCamp to NASA with Data Engineer Joe Hill [Podcast #178]
+freeCodeCamp.org,pHMtbdGoP_g,"Google Calendar Clone Tutorial – PHP, MySQL, JavaScript, HTML, and CSS"
+freeCodeCamp.org,DrAZf4ZHqaM,Google Cloud Cybersecurity Certificate Course
+freeCodeCamp.org,yDhCweudqyY,Rust VS Go VS TypeScript which back end language is for you with Tai Groot [Podcast #176]
+freeCodeCamp.org,8WBS0dT0h2I,Evolution of the Transformer Architecture Used in LLMs (2017–2025) – Full Course
+sentdex,cmnJhOWp2z4,A bigger brain for the Unitree G1- Dev w/ G1 Humanoid P.4
+sentdex,Uc1nhT8beTU,Unitree G1 - Moving the arms/hands - Dev w/ G1 Humanoid P.3
+sentdex,sJYlJlIEBpg,"Unitree G1 LiDAR, SLAM, navigation and control. Dev w/ G1 Humanoid P.2"
+sentdex,pPTo62O__CU,Unboxing the Unitree G1 Edu Humanoid
+sentdex,57cPmzwCqd4,Vibe Coding a Robotic Hand to Crawl (Inspire RH56DFQ)
+sentdex,MeHWIXLV3Zo,Vibe Coding Robot Hands w/ Cursor (Inspire RH56DFQ-2L/R)
+sentdex,WKF__cJTxvg,Programming with LLM Agents in 2025
+sentdex,VyseRArtl5E,What's going on everybody?
+sentdex,pCX_3p40Efc,Building an LLM fine-tuning Dataset
+sentdex,ChfEO8l-fas,Visualizing Neural Network Internals
+sentdex,mm9IHqgCbZc,Getting Back on Grid
+sentdex,_GQfj3jhXVM,Open Source AI Inference API w/ Together
+sentdex,9MigSbQ7AQk,INFINITE Inference Power for AI
+sentdex,OnYGtKQT-rU,Pandas Dataframes on your GPU w/ CuDF
+sentdex,J_3hDqSvpmg,QLoRA is all you need (Fast and lightweight model fine-tuning)
+Two Minute Papers,6CSq2CuGBD0,Blender 4.5 - How My Dream Just Came True!
+Two Minute Papers,4bFDPVe6BHs,The “Biggest” AI That Came Out Of Nowhere!
+Two Minute Papers,TzIKbjuSy2A,Roblox Solved The Physics Problem That Stumped Everyone!
+Two Minute Papers,AVeQfSab9to,NVIDIA’s New AI Cheated At Parkour…And Got Fixed!
+Two Minute Papers,DFBZ8KEqVXw,Unreal Engine 5.6: Outrageously Good!
+Two Minute Papers,yRk6vGkfpAI,NVIDIA’s New AI: Painting With Light!
+Two Minute Papers,jZT7yHVgcOo,OpenAI’s New AI: Crushing Games! 🎮
+Two Minute Papers,WFG-VGZIwUo,NVIDIA’s New AI: Growing Worlds From Nothing!
+Two Minute Papers,q2b_8XpGte0,Google’s New Tech: This Isn’t a Photo!
+Two Minute Papers,76VYzhs-0FE,NVIDIA’s New AI: Next Level Games Are Coming!
+Two Minute Papers,qYJk9l65eJ8,"Microsoft’s New AI: Ray Tracing 16,000,000 Images!"
+Two Minute Papers,yKJ0Nv6yEIU,"NVIDIA’s New AI: Wow, Video Games Become Reality!"
+Two Minute Papers,ZE0JZYgiaGc,NVIDIA’s New AI: Impossible Weather Graphics!
+Two Minute Papers,Pqx-gSiogjM,DeepMind’s Veo3 AI - The New King Is Here!
+Two Minute Papers,T0eWBlFhFzc,DeepMind’s AlphaEvolve AI: History In The Making!
+StatQuest,qPN_XZcJf_s,"Reinforcement Learning with Human Feedback (RLHF), Clearly Explained!!!"
+StatQuest,DVGmsnxB2UQ,Reinforcement Learning with Neural Networks: Mathematical Details
+StatQuest,9hbQieQh7-o,Reinforcement Learning with Neural Networks: Essential Concepts
+StatQuest,Z-T0iJEXiwM,Reinforcement Learning: Essential Concepts
+StatQuest,_kstkMF-lQQ,StatQuest on DeepLearning.AI!!! Check out my short course on attention!
+StatQuest,fivdgj5w0K0,StatQuest with Josh Starmer is live!
+StatQuest,GDN649X_acE,"Encoder-Only Transformers (like BERT) for RAG, Clearly Explained!!!"
+StatQuest,qJrmQe8TOTw,Luis Serrano + Josh  Starmer Q&A Livestream!!!
+StatQuest,DkmfIQRDyXc,Human Stories in AI: Nana Janashia@TechWorld With Nana
+StatQuest,0QOm7Sn5uwQ,A few more lessons from my Pop!
+StatQuest,wIGOnM6Cf_E,Human Stories in AI: Abbas Merchant@Matics Analytics
+StatQuest,jp_NcF9Oagk,Luis Serrano + Jay Alammar + Josh  Starmer Q&A Livestream!!!
+StatQuest,C9QSpl5nmrY,Coding a ChatGPT Like Transformer From Scratch in PyTorch
+StatQuest,m8fvdRZb5CE,Human Stories in AI: Amy Finnegan
+StatQuest,QhWZq8oBpVw,Human Stories in AI: Xavier Moyá
+Lex Fridman Podcast,-HzgcbRXUK8,"Demis Hassabis: Future of AI, Simulating Reality, Physics and Video Games | Lex Fridman Podcast #475"
+Lex Fridman Podcast,upeawiM1Sag,DHH rant against Apple
+Lex Fridman Podcast,UbOjufRmpq4,Advice for beginner programmers
+Lex Fridman Podcast,vagyIcmIGOQ,"DHH: Future of Programming, AI, Ruby on Rails, Productivity & Parenting | Lex Fridman Podcast #474"
+Lex Fridman Podcast,dnuVvRyrBb0,Eisenhower's warning about the military industrial complex. I think about these words often.
+Lex Fridman Podcast,gtmJi8LbAts,"Iran War Debate: Nuclear Weapons, Trump, Peace, Power & the Middle East | Lex Fridman Podcast #473"
+Lex Fridman Podcast,UN5qgBk6MwY,Terence Tao on Grigori Perelman declining the Fields Medal
+Lex Fridman Podcast,HUkBz-cdB-k,"Terence Tao: Hardest Problems in Mathematics, Physics & the Future of AI | Lex Fridman Podcast #472"
+Lex Fridman Podcast,b268x2kzefY,Lex Fridman tests Google XR glasses
+Lex Fridman Podcast,ufI31PNM9u8,"Google CEO on Elon Musk, Tesla, and Waymo"
+Lex Fridman Podcast,sXPONXB8WCo,Lex Fridman tests Google Beam
+Lex Fridman Podcast,9V6tWC4CdFQ,Sundar Pichai: CEO of Google and Alphabet | Lex Fridman Podcast #471
+Lex Fridman Podcast,cp1lprZUQcE,"James Holland: World War II, Hitler, Churchill, Stalin & Biggest Battles | Lex Fridman Podcast #470"
+Lex Fridman Podcast,4OyB3hFb2AA,"Oliver Anthony: Country Music, Blue-Collar America, Fame, Money, and Pain | Lex Fridman Podcast #469"
+Lex Fridman Podcast,A6m4iJIw_84,"Janna Levin: Black Holes, Wormholes, Aliens, Paradoxes & Extra Dimensions | Lex Fridman Podcast #468"
+Codebasics (Krish Naik),czurzBOhc9E,Data Analytics Bootcamp 5.0 #shorts #data #dataanalyst #dataanlysis
+Codebasics (Krish Naik),G42J2MSKyc8,CrewAI Tutorial
+Codebasics (Krish Naik),8Bj7fr9l-f4,Drop your guess in the comments #shorts #data #dataanalyst
+Codebasics (Krish Naik),KurGnK76-EU,Agentic RAG Simply Explained
+Codebasics (Krish Naik),21sflqqgIwE,Free Data Analysis Project using AI Tools #shorts #data #ai #dataanalysis
+Codebasics (Krish Naik),CHxb6R7AUTs,Right Way to Learn Python #shorts #codebasics #python #data
+Codebasics (Krish Naik),Wr0AsdR-I3k,Best Agentic AI Framework
+Codebasics (Krish Naik),BaAA7kNjeZw,50 mins of Raw Insights on Career in AI Era | Ft. Rishi Seth - Sr Director at Fractal
+Codebasics (Krish Naik),gQPl2U3ZIdQ,Data Informed Vs Data Driven #shorts #data #dataanalyst #datascientist #codebasics
+Codebasics (Krish Naik),E66ufob9lgw,AI for Young Innovators #codebasics #shorts #ai #school #innovators
+Codebasics (Krish Naik),DNBaUCCST3I,Agentic AI Roadmap 2025
+Codebasics (Krish Naik),u1yCqZ4ZtDU,Tips to speed up a Python Program #shorts #data #codebasics #python
+Codebasics (Krish Naik),0QdHHlxD5ZA,Role of a Data Analyst #shorts #data #dataanalyst #dataanlysis
+Codebasics (Krish Naik),vJOGC8QJZJQ,LangChain vs LangGraph vs LangSmith
+Codebasics (Krish Naik),Gb_HxaSOK4c,Right Way to learn Excel #shorts #codebasics #data #dataanalyst #datascientist #excel
+Data Science Dojo,fNeOPq7y12M,Connecting the Dots How Network Science Shapes Our World
+Data Science Dojo,zKjegh7ZrpU,"Streamlit vs Shiny, Plotting Options, Deployment Tips & Best Practices — Q&A Recap"
+Data Science Dojo,ES2FXayfEjI,From Data to Deployment Building and Launching a Fully Interactive Sales Dashboard with Streamlit
+Data Science Dojo,TjrtLjL-6K0,Who Gets To Decide What Responsible AI Actually Means?
+Data Science Dojo,z4XcAzk3mbw,Building an Interactive Sales Dashboard with Streamlit: A Live Step by Step Demo #ai #streamlit
+Data Science Dojo,cgrGlBz92Mk,Introducing Streamlit: Python Powered Web Apps for Data Science #ai #python #datascience #webapps
+Data Science Dojo,EfVp0RAHYdI,AI-Powered Automation with LLMs and Power Automate
+Data Science Dojo,cw5lk-tESA4,Open-Source or Proprietary? Giant LLMs or Domain-Specific Models? #llms #aimodels #enterpriseai
+Data Science Dojo,J71tpcvsEDM,Technology Isn’t Just Limited To The Technologists Anymore
+Data Science Dojo,z0SaFECipRc,Open Source Vs. Closed Source Vs. Hybrid AI Models - What's The Future #aimodels #futureofai #ai
+Data Science Dojo,-UinkVqE3xQ,Real World Use Cases for Agentic AI Search
+Data Science Dojo,qDFT0hMdfV8,How Agentic AI Search Works From Prompt to Iteration Without Fancy APIs
+Data Science Dojo,Ts4ovDipCgA,Building a Data Analytics Agent using LLMs
+Data Science Dojo,1Wpzb_k-cPQ,Agentic AI with MCP Integration
+Data Science Dojo,j07KWpv3ltI,AI Agents for Search How They Actually Work #ai #aiagents
+Ken Jee,lqOrULJvYXg,So You Think You Can ANALYZE? (Data Content Creator Hackathon)
+Ken Jee,QEDZaBMozIo,Moving On
+Ken Jee,Hyhfa7z0jTk,How Does ChatGPT Image Analysis Do on an IQ Test?
+Ken Jee,L5Cis5bOwgw,A Data Dream Come True
+Ken Jee,M1I5HlzQges,The Death of the Full-Time Job
+Ken Jee,T_-0l0ORi5I,How to Survive a Down Data Job Market
+Ken Jee,w13zJB_jyBI,The Harsh Reality of the Data Job Market
+Ken Jee,oZ9rMrqyTbI,7 Industries AI will Aggressively Disrupt
+Ken Jee,6BrYKdqq4uA,What's in My Data Science Travel Bag? (50+ Flights Last Year)
+Ken Jee,1dAvbIMrLos,7 Enticing Jobs AI Will Create
+Ken Jee,lqYxmYMkfK8,The ChatGPT Code Interpreter is OVERRATED
+Ken Jee,-JTU734oMfk,Exciting Announcement!
+Ken Jee,HVpbmu7rFYE,AI: A Customer Service Revolution?
+Ken Jee,NQQ3DRdXAXE,Beginner Kaggle Data Science Project Walk-Through (Housing Prices) | With ChatGPT
+Ken Jee,xpi-M2j3NmE,How I Would Learn Data Science with AI (If I Could Start Over)
+Krish Naik,ayzTBMLKOKk,LLMOPS Bootcamp-induction Session
+Krish Naik,eVRLh08jDoo,Detailed LLMOPs Project Lifecycle
+Krish Naik,E0fQWFNqGgg,Building Agents And Multi Agents With LangGraph- Part 3
+Krish Naik,TmLkR2qil2U,Day3 - End to End Agentic AI Project
+Krish Naik,3-L4nKkU0vU,Building Arxiv Paper Finder using Microsoft Autogen #AI #AgenticAI
+Krish Naik,5qY8L1pj-gQ,Day 2- End To End Agentic AI Project With LLMOPS
+Krish Naik,ghnFmeY4bO4,Day 1- End To End Agentic AI Project With LLMOPS
+Krish Naik,Wg8ue17LMT8,Building AI Agents & Agentic AI System via Microsoft AutoGen Udemy Course Is Live!!
+Krish Naik,5TBsXGdmkc0,Agentic With LangGraph Crash Course-Part 2- Debugging And Monitering
+Krish Naik,abppwF3MCG0,Projects You Should Build For Gen AI And Agentic AI Roles
+Krish Naik,dIb-DujRNEo,Agentic AI With Langgraph And MCP Crash Course-Part 1
+Krish Naik,ASRCJK2aWk0,Build MCP Servers With Tools From Scratch With Langchain
+Krish Naik,TYEqenKrbaM,Right Way To Learn AI In 2025
+Krish Naik,ObAFqcuX9MA,"Trae AI- Better Than Cursor IDE? MCP Integration, Custom AI Agents With MCP Tutorials"
+Krish Naik,fGCJ2UxdmCg,LLMOPS Industry Ready Projects Course Announcement
+edureka!,cHlLLgOO0Qw,Complete Selenium Course in 10 Hours | Web Automation for Beginners (2025) | Edureka Live
+edureka!,20moEpU0liU,JavaScript Full Course in 11 Hours [2025] | JavaScript Tutorial for Beginners |  Edureka Live
+edureka!,iIm8acWm1ns,Generative AI Full Course 2025 | Gen AI Tutorial for Beginners | Gen AI Explained | Edureka Live
+edureka!,vQbReDn3GTs,Data Engineer Full Course in 10 Hours [2025]  | Data Engineer Course For Beginners | Edureka Live
+edureka!,sEqOSvNN4NQ,AWS Data Engineering Roadmap 2025 | AWS Data Engineer Roadmap (Top AWS Services to Focus) | Edureka
+edureka!,24LO_Uo-yTI,What Are LangChain Agents? Explained in 60 Seconds! 🤖
+edureka!,5li85GZgF28,LangChain Agents Explained | How LangChain Works to Create AI Agents | AI Agents | Edureka
+edureka!,RCbz5SoEIG0,Data Science Full Course - Learn Data Science in 10 Hours | Data Science For Beginners | Edureka
+edureka!,WDLxBA_dK6c,"What Does a Cloud Architect Do? Skills, Salary & Demand in 2025!"
+edureka!,qOFIyNctwg8,Excel Full course  in 4 hours [2025]  | Excel for Beginners | Excel Training | Edureka Live
+edureka!,Ney9znuEn_U,HTML CSS  Full course for Beginners [2025] | Learn HTML & CSS | Full Stack Training | Edureka Live
+edureka!,bFb9dbYDi3g,Full Stack Web Development Full Course [10 hours] | Full Stack Web Development Course | Edureka Live
+edureka!,fqHrX_5F3lM,AWS Services Used in Data Engineering | Top AWS Services A Data Engineer Should Know | Edureka
+edureka!,R0x17WppSac,More High-Paying Jobs You Should Know in 2025!
+edureka!,z9MtcfTNiOs,Salesforce Full Course - Learn Salesforce in 5 Hours {2025] | Salesforce Training Videos | Edureka
+Data Professor,cIQeIUIijbs,Build an LLM-Powered Voice Agent in Python
+Data Professor,gYqQ9gQ-bbM,Bioinformatics Project from Scratch PART 2 - Preparing the Data Set
+Data Professor,71HvNAHlQXc,Building a Call Center Analytics Pipeline in Python
+Data Professor,IS7RLdCBLus,How to Quickly Leverage Computer Vision in Python
+Data Professor,bUr-Y0969V4,From DNA to UI: Connecting the Dots between Theory and Application in Bioinformatics
+Data Professor,KYfce1X5CXw,Code Your Own Multilingual AI in Python that speaks 32 languages
+Data Professor,qShyjPKj8BY,Bioinformatics Project from Scratch PART 1 - Collecting the Data Set
+Data Professor,PytsxNfR8GI,Using Google Colab for Data Science and AI
+Data Professor,RWBSd4Vh-90,Building a YouTube AI assistant for content creators with Python
+Data Professor,y0XaQn-EnBA,Data Science Podcast with Sebastian Flores
+Data Professor,5JGgxASmOpw,How to level up in Gen AI
+Data Professor,-DTkPKd74tg,Code your own YouTube AI assistant in Python
+Data Professor,8zqChJTnmrU,Data Storytelling in Python
+Data Professor,31WjwQ1x3UA,How I Would learn Python?
+Data Professor,Ms7pTty6iaE,Advice for newcomers to Tech (Ft. Cheuk Ting Ho)
+Python Engineer,qfWpPEgea2A,Gemini API with Python - Getting Started Tutorial
+Python Engineer,IUTFrexghsQ,Build a free writing assistant with Python and Ollama
+Python Engineer,iqrS7Q174Ac,Build an AI app with FastAPI and Docker - Coding Tutorial with Tips
+Python Engineer,-ogEkqeDEPg,Mojo 🔥 — a new programming language for AI developers (first look)
+Python Engineer,owopzp436jM,PyScript is officially here!🚀 Build web apps with Python & HTML
+Python Engineer,LbT1yp6quS8,LangChain Crash Course - Build apps with language models
+Python Engineer,M1gu9MDucMA,How to automate Notion with Python | Notion API Tutorial
+Python Engineer,0H2miBK_gAk,How to create a great dev environment with Docker
+Python Engineer,UAw67zodiGA,The BEST Data Science Platform? Anaconda Learning and Notebooks review
+Python Engineer,UwvAMkH9tTU,Best Platforms to Host Python Apps (for free!!)
+Python Engineer,M6cfT2pqpSc,Supabase Crash Course For Python Developers
+Python Engineer,niP8z1ScULM,Build a Media Analysis Dashboard with Python & Cloudinary
+Python Engineer,RvvXo2-9bnE,6 Tips to write BETTER For Loops in Python
+Python Engineer,dOUk9mmSzIo,Fastest way to initialize a List in Python? (comparison of 3 options)
+Python Engineer,ZW-TWrEF6qc,Top 10 Python One Liners YOU MUST KNOW!
+Tech With Tim,dvJ5IRtlyec,If you can solve THIS you can work at Nvidia
+Tech With Tim,KNtKUj0sjBE,What does the filter function do in Python?
+Tech With Tim,ARVKxHCUQ9s,If you can solve THIS you can work at Google
+Tech With Tim,LYAGDk7m5iA,What do dataclass decorators do in Python?
+Tech With Tim,j_m0ppzM2qU,How to become a Python developer FAST
+Tech With Tim,Gje9U05oNIY,The biggest mistake graduate devs make on their resume
+Tech With Tim,ryeycH0njP8,How I Mastered Data Structures and Algorithms
+Tech With Tim,jxtxc1sqs3U,did you know about this in Python?
+Tech With Tim,GOgfQxDPaDw,The Easiest Ways to Run LLMs Locally - Docker Model Runner Tutorial
+Tech With Tim,_FgM2kPJk54,Don't make this mistake on your coding resume
+Tech With Tim,qT7Wk8t_OCU,The BIGGEST mistake coders make on their resume
+Tech With Tim,FNL61tvwBUg,How To Pass Coding Interviews Like the Top 1%
+Tech With Tim,wttq5LtIrcI,If you can solve THIS you can work at Apple
+Tech With Tim,vmc58lEih8k,You NEED to understand THIS if you wanna find success in Tech
+Tech With Tim,iDcR71NIJ0U,PLEASE Stop Making These Python Coding Mistakes
+Data Science Dojo (Clips),fNeOPq7y12M,Connecting the Dots How Network Science Shapes Our World
+Data Science Dojo (Clips),zKjegh7ZrpU,"Streamlit vs Shiny, Plotting Options, Deployment Tips & Best Practices — Q&A Recap"
+Data Science Dojo (Clips),ES2FXayfEjI,From Data to Deployment Building and Launching a Fully Interactive Sales Dashboard with Streamlit
+Data Science Dojo (Clips),TjrtLjL-6K0,Who Gets To Decide What Responsible AI Actually Means?
+Data Science Dojo (Clips),z4XcAzk3mbw,Building an Interactive Sales Dashboard with Streamlit: A Live Step by Step Demo #ai #streamlit
+Data Science Dojo (Clips),cgrGlBz92Mk,Introducing Streamlit: Python Powered Web Apps for Data Science #ai #python #datascience #webapps
+Data Science Dojo (Clips),EfVp0RAHYdI,AI-Powered Automation with LLMs and Power Automate
+Data Science Dojo (Clips),cw5lk-tESA4,Open-Source or Proprietary? Giant LLMs or Domain-Specific Models? #llms #aimodels #enterpriseai
+Data Science Dojo (Clips),J71tpcvsEDM,Technology Isn’t Just Limited To The Technologists Anymore
+Data Science Dojo (Clips),z0SaFECipRc,Open Source Vs. Closed Source Vs. Hybrid AI Models - What's The Future #aimodels #futureofai #ai
+Data Science Dojo (Clips),-UinkVqE3xQ,Real World Use Cases for Agentic AI Search
+Data Science Dojo (Clips),qDFT0hMdfV8,How Agentic AI Search Works From Prompt to Iteration Without Fancy APIs
+Data Science Dojo (Clips),Ts4ovDipCgA,Building a Data Analytics Agent using LLMs
+Data Science Dojo (Clips),1Wpzb_k-cPQ,Agentic AI with MCP Integration
+Data Science Dojo (Clips),j07KWpv3ltI,AI Agents for Search How They Actually Work #ai #aiagents
+TensorFlow,TxBJyXKTbJ8,Can AI increase the speed in which we solve problems?
+TensorFlow,HEGojkpjx98,Is AI a medium or tool?
+TensorFlow,wyHf6yL15N4,Personalizing healthcare with AI
+TensorFlow,MKUWJ6crWfc,Ideas for using NotebookLM?
+TensorFlow,AuyaJz5O_LQ,Building AI responsibly
+TensorFlow,8VTrp9m23kc,What is Checks?
+TensorFlow,hyZSJfA9Rwk,Revolutionizing sign language with AI
+TensorFlow,Br0cUw3WHtQ,Season 4 is here!
+TensorFlow,8CPI5_Ivmj4,Deep dive into TensorFlow Ranking for recommendations
+TensorFlow,zl5l6s6eb3o,How to perform object detection with KerasCV
+TensorFlow,vbHX5R1rIo8,Accelerate embedding lookup operation (Building recommendation systems with TensorFlow)
+TensorFlow,Wb8-1O8bW68,Perform text classification with KerasNLP
+TensorFlow,QlKmtX1oxa8,Generate images with stable diffusion using KerasCV
+TensorFlow,8aAghDxgXhY,Overview of KerasCV and KerasNLP
+TensorFlow,GgTQr6BoDAY,Generate text with KerasNLP
+Deeplearning.ai,uIPvSV6p92Y,A new course on Retrieval Augmented Generation (RAG) is here!
+Deeplearning.ai,dFHEgsJTmDI,A new course on Retrieval Augmented Generation (RAG) is live!
+Deeplearning.ai,uOh4r1ZtrCM,Learn to post-train LLMs in this free course
+Deeplearning.ai,B1ORNlS76lE,"New course! Enroll in ""ACP: Agent Communication Protocol"""
+Deeplearning.ai,86OuivQ-q58,"New course with Meta! Enroll in ""Building with Llama 4"" 🦙"
+Deeplearning.ai,WvQTkMiOrxo,New course! Orchestrating Workflows for GenAI Applications
+Deeplearning.ai,f5ym8e1pwHA,New course with Databricks! DSPy: Build and Optimize Agentic Apps
+Deeplearning.ai,sgy7jSbPUWY,New short course: Reinforcement Fine-Tuning with GRPO
+Deeplearning.ai,IkBslShH5to,New course on MCP (Model Context Protocol) with Anthropic!
+Deeplearning.ai,mwL5Yzg6UJE,Building AI Voice Agents for Production
+Deeplearning.ai,OWZ13KiWP0s,New course! Enroll in Building Code Agents with Hugging Face smolagents
+Deeplearning.ai,xTQd3s2P8lo,Enroll in DeepLearning.AI's Data Analytics Professional Certificate!
+Deeplearning.ai,76BUJ9hYu-g,New short course: Building AI Browser Agents
+Deeplearning.ai,qUt0-B8s1vE,A new short course created with DotTxt is available now
+Deeplearning.ai,tKyvkU69Ers,AI Dev 25 | Bilge Yücel: Building and Deploying Agentic Workflows with Haystack
+Arxiv Insights,k3aUf5SpFvA,TextureFlow part II: full ComfyUI walkthrough - powerful AI animation tool
+Arxiv Insights,NSQLVNAe5Hc,TextureFlow: Create insane VJ loops with full control over shape and texture (Open Source!)
+Arxiv Insights,nGVFbPKrRWQ,AlphaFold and the Grand Challenge to solve protein folding
+Arxiv Insights,aCJkuaXg-vo,The Molecular Basis of Life
+Arxiv Insights,dCKbRCUyop8,Editing Faces using Artificial Intelligence
+Arxiv Insights,pFWiauHOFpY,'How neural networks learn' - Part III: Generalization and Overfitting
+Arxiv Insights,5P7I-xPq8u8,An introduction to Policy Gradient methods - Deep Reinforcement Learning
+Arxiv Insights,0eO2TSVVP1Y,OpenAI Five: When AI beats professional gamers
+Arxiv Insights,0Ey02HT_1Ho,Reinforcement Learning with sparse rewards
+Arxiv Insights,JgvyzIkgxF0,An introduction to Reinforcement Learning
+Arxiv Insights,9zKuYvjFFS8,Variational Autoencoders
+Arxiv Insights,4rFOkpI0Lcg,'How neural networks learn' - Part II: Adversarial Examples
+Arxiv Insights,McgxRxi2Jqo,'How neural networks learn' - Part I: Feature Visualization
+Arxiv Insights,Ol0-c9OE3VQ,Why humans learn so much faster than AI
+Arxiv Insights,MgowR4pq3e8,AlphaGo - How AI mastered the hardest boardgame in history
+DeepMind,R-5DpDyzRV8,The Great Voyage - An AI generated film inspired by vintage photography
+DeepMind,1O27hf17BaY,A whistle stop tour of AI creation with Paige Bailey
+DeepMind,WImguouLsmw,Could digital twins – virtual replicas of humans or organs – accelerate medical research? 🏥
+DeepMind,vIIIau06wGo,The nature of AI: solving the planet's data gap with Drew Purves
+DeepMind,XpIMuCeEtSk,A quest for a cure: AI drug design with Isomorphic Labs
+DeepMind,IwglW_hIL_g,Gemini 2.5 Pro Deep Think Demo | Competitive coding problem
+DeepMind,Rgwty6dGsYI,Redefining robotics with Carolina Parada
+DeepMind,mCFMn0UkRt0,Veo 3 demo | Sailor and the sea
+DeepMind,vv6Ryg5iyh8,Veo 3 demo | Owl and badger
+DeepMind,vEP4GCijXXo,Veo 3 demo | Duck interrogation
+DeepMind,QYnJ3qJ5qJQ,Veo 3 demo | Dialog
+DeepMind,SPF4MGL7K5I,Veo 3 demo | Off-road rally
+DeepMind,KhcwvoJiP3I,Veo 3 demo | Magical origami
+DeepMind,ffRaD7sY0TQ,Veo 3 demo | Irish coast
+DeepMind,tc00I7rtU2s,Veo 3 demo | Sweet typing
