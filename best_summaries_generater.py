@@ -1,10 +1,10 @@
-import openai
+from openai import OpenAI
 import pandas as pd
 from tqdm import tqdm
 
 # Load your OpenAI API key
-openai.api_key = "***REMOVED***"  # Replace with your key or use environment variable
-
+api_key = "***REMOVED***"  # Replace with your key or use environment variable
+client = OpenAI(api_key=api_key)  # or use os.getenv("OPENAI_API_KEY")
 # File path and column to summarize
 CSV_PATH = r"C:\Users\franc\Documents\phase5_project\Summarizer_Project\experiment_summaries_openai\Book2.csv"
 TEXT_COL = "Content"
@@ -33,7 +33,7 @@ summaries = []
 for content in tqdm(df[TEXT_COL], desc="Summarizing"):
     try:
         response = client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-4o",
             messages=[
                 {"role": "system", "content": "You are a summarization assistant."},
                 {"role": "user", "content": build_prompt(content)}
