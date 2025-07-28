@@ -8,7 +8,7 @@ client = OpenAI(api_key=api_key)  # or use os.getenv("OPENAI_API_KEY")
 # File path and column to summarize
 CSV_PATH = r"C:\Users\franc\Documents\phase5_project\Summarizer_Project\experiment_summaries_openai\Book2.csv"
 TEXT_COL = "Content"
-OUTPUT_CSV = "summarized_articles.csv"
+OUTPUT_CSV = "summarized_articles_automated.csv"
 
 df = pd.read_csv(CSV_PATH)
 
