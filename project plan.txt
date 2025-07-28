@@ -1,0 +1,33 @@
+LIST OF THINGS TO DO:
+1. merge the whole dataset
+2. clean the dataset
+3. use openai api to get evaluation summaries
+
+
+4. generate summaries with distilbart and have the evaluation metrics compared to the 
+gpt summaries to make sure distilbart is learning to make better summaries
+basically finetuning bart.
+
+changes to be made in step 4. (check if its possible to have both summaries generated in one file)
+- add code for finetuning the distilbart model
+- add code for generating summaries with finetuned model
+- add code for generating summaries with baseline model
+- add evaluation metrics for both baseline and finetuned summaries
+
+
+5. Create a test set, scrape more abstracts 
+6. ask gpt to summarize them
+7. evaluate the test using the finetuned version
+
+8. create summaries using the baseline version 
+9. evaluate summaries of baseline version
+10. Compare the metrics to show its not better at summaries
+
+(once the model is finetuned, save it before stopping the session)
+(kaggle will delete it once you stop the session.)
+11. Save the model locally and also to huggingface and also to kaggle datasets.
+
+
+12. create an api
+13. create the UI
+14. connect the model to the api, so that it can summarize pasted content.
