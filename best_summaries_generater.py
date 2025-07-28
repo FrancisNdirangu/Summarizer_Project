@@ -5,12 +5,12 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-API_KEY = os.getenv("api_key")
+# API_KEY = os.getenv("api_key")
 
 # Load your OpenAI API key
-client = OpenAI(api_key=API_KEY)  # or use os.getenv("OPENAI_API_KEY")
+client = OpenAI()  # or use os.getenv("OPENAI_API_KEY")
 # File path and column to summarize
-CSV_PATH = r"C:\Users\franc\Documents\phase5_project\Summarizer_Project\experiment_summaries_openai\Book2.csv"
+CSV_PATH = r"C:\Users\franc\Documents\phase5_project\Summarizer_Project\cleaned_merged_data.csv"
 TEXT_COL = "Content"
 OUTPUT_CSV = "summarized_articles_automated.csv"
 
