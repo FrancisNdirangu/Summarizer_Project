@@ -12,10 +12,10 @@ load_dotenv()
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # File path and column names
-CSV_PATH = r"C:\Users\franc\Documents\phase5_project\Summarizer_Project\scraped_files\towards_data_science_100_articles.csv"
+CSV_PATH = r"C:\Users\franc\Documents\phase5_project\Summarizer_Project\cleaned_merged_data.csv"
 TITLE_COL = "Title"
 CONTENT_COL = "Content"
-OUTPUT_CSV = "summarized_articles_automated.csv"
+OUTPUT_CSV = "final_summaries_3.5turbo.csv"
 
 # Load dataset
 df = pd.read_csv(CSV_PATH)
@@ -45,7 +45,7 @@ for i, row in tqdm(df.iterrows(), total=len(df), desc="Summarizing"):
     try:
         prompt = build_prompt(row[TITLE_COL], row[CONTENT_COL])
         response = client.chat.completions.create(
-            model="gpt-4o",
+            model="gpt-3.5-turbo",  #"gpt-4o-mini",#gpt-4o",
             messages=[
                 {"role": "system", "content": "You are a summarization assistant."},
                 {"role": "user", "content": prompt}
