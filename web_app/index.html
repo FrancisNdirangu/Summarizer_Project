@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Summarizer for Scientific Blogs</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>History</h2>
+                <button class="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+            </div>
+            <button class="action-btn clear-history" onclick="clearHistory()">Clear History</button>
+            <div id="history-list" class="history-list"></div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="container">
+            <div class="header">
+                <h1>Insight-Distiler SummarAIzer</h1>
+                <button class="theme-toggle" onclick="toggleTheme()">🌙 Toggle Theme</button>
+            </div>
+
+            <div class="input-mode">
+                <label><input type="radio" name="input-mode" value="text" checked> Paste Text</label>
+                <label><input type="radio" name="input-mode" value="url"> Paste URL</label>
+                <label><input type="radio" name="input-mode" value="pdf"> Upload PDF</label>
+            </div>
+
+            <!-- Text Input -->
+            <div id="text-input" class="input-section">
+                <textarea id="blog-text" placeholder="Paste your blog article or content here..." rows="10"></textarea>
+            </div>
+
+            <!-- URL Input -->
+            <div id="url-input" class="input-section" style="display: none;">
+                <input type="text" id="blog-url" placeholder="Paste the blog URL here...">
+                <button class="action-btn" onclick="extractUrl()">Extract Content</button>
+                <div id="url-status" class="status"></div>
+                <div id="extracted-text" class="extracted-text" style="display: none;">
+                    <h3>Extracted Blog Text</h3>
+                    <p id="extracted-content"></p>
+                </div>
+            </div>
+
+            <!-- PDF Upload -->
+            <div id="pdf-input" class="input-section" style="display: none;">
+                <input type="file" id="pdf-file" accept=".pdf">
+                <button class="action-btn" onclick="uploadPdf()">Upload and Extract</button>
+                <div id="pdf-status" class="status"></div>
+                <div id="pdf-extracted-text" class="extracted-text" style="display: none;">
+                    <h3>Extracted PDF Text</h3>
+                    <p id="pdf-extracted-content"></p>
+                </div>
+            </div>
+
+            <!-- Summarize Button -->
+            <button class="summarize-btn" onclick="summarize()">
+                <span class="btn-text">Summarize</span>
+                <span class="spinner" style="display: none;"></span>
+            </button>
+
+            <!-- Summary Output -->
+            <div id="summary-output" class="summary-output" style="display: none;">
+                <h2>Summary</h2>
+                <p id="summary-text"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
