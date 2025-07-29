@@ -3,9 +3,20 @@ LIST OF THINGS TO DO:
 2. clean the dataset
 3. use openai api to get evaluation summaries
 
+(major change is we will now use a labeled set of summaries, we will use gpt4o api for this)
 
+(the reason we chose gpt4o is to automate the summary generation in case we need to scale up the data)
+
+(also gpt4o makes human level summaries and with the api can be given some specifications to follow for summary generation)
+(another reason is that if we use human chosen summaries, different humans may have different subjective
+choices for the best summaries, this way we can be more consistent)
+
+(another reason is that distilbart sometimes makes mistakes when learning the context, so we will use gpt4o api to teach it 
+how to reduce the mistakes it makes in context using the generated summaries, which is something we couldnt do as effectively 
+with just choosing the summaries) - this is very important for making abstractive summaries, compression of ideas not just
+retrieving most important sentences.
 4. generate summaries with distilbart and have the evaluation metrics compared to the 
-gpt summaries to make sure distilbart is learning to make better summaries
+gpt4o summaries to make sure distilbart is learning to make better summaries
 basically finetuning bart.
 
 changes to be made in step 4. (check if its possible to have both summaries generated in one file)
@@ -16,7 +27,7 @@ changes to be made in step 4. (check if its possible to have both summaries gene
 
 
 5. Create a test set, scrape more abstracts 
-6. ask gpt to summarize them
+6. use openai api to summarize them based of criteria
 7. evaluate the test using the finetuned version
 
 8. create summaries using the baseline version 

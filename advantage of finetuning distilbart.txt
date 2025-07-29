@@ -1,0 +1,9 @@
+advantage of finetuning distilbart
+
+its much faster than using any openai api.
+approximately 2.5 to 3 times faster than BART-large-cnn
+6 times faster than gpt4o api which is one of the faster ones
+
+if a user wanted to use the gpt4o for summaries they would have to pay each time they access the api for longer summaries
+
+if distilbart is taught to make summaries almost as well as gpt4o it will be much faster and cheaper for the user.

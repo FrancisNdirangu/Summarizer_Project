@@ -1,0 +1,47 @@
+9.8m tokens
+
+for gpt 4o
+2.5+1.25.10 = 14$ per million tokens
+
+9.8*14 = 137$
+
+
+for gpt4.1
+
+2+0.5+8 = 10.5
+
+9.8*10.5 = 102.9$
+
+
+for gpt4.1 mini
+
+0.4+0.1+1.6 = 2.1$ per million tokens
+
+2.1*9.8 = 20.58$
+
+if i have 5000 rows. each with 1500 tokens. 
+and i want summaries of all the rows using gpt4.1 mini. 
+
+baseline rouge metrics improvement using the 21 row summaries:
+
+| Metric         | Baseline | Finetuned | Improvement |
+| -------------- | -------- | --------- | ----------- |
+| **ROUGE-1**    | 0.2626   | 0.3633    | +38%        |
+| **ROUGE-2**    | 0.0657   | 0.0842    | +28%        |
+| **ROUGE-L**    | 0.1439   | 0.1685    | +17%        |
+| **ROUGE-Lsum** | 0.1923   | 0.2498    | +30%        |
+
+
+target rouge
+
+| Metric         | Acceptable | Good      | Excellent |
+| -------------- | ---------- | --------- | --------- |
+| **ROUGE-1**    | 0.30–0.35  | 0.36–0.45 | > 0.45    |
+| **ROUGE-2**    | 0.08–0.12  | 0.13–0.20 | > 0.20    |
+| **ROUGE-L**    | 0.25–0.35  | 0.36–0.42 | > 0.42    |
+| **ROUGE-Lsum** | 0.28–0.36  | 0.37–0.45 | > 0.45    |
+
+
+
+
+
