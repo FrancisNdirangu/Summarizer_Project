@@ -15,6 +15,10 @@ choices for the best summaries, this way we can be more consistent)
 how to reduce the mistakes it makes in context using the generated summaries, which is something we couldnt do as effectively 
 with just choosing the summaries) - this is very important for making abstractive summaries, compression of ideas not just
 retrieving most important sentences.
+
+abstractive summary - Provides a concise overview of the topic, methods, results, and conclusions.
+
+
 4. generate summaries with distilbart and have the evaluation metrics compared to the 
 gpt4o summaries to make sure distilbart is learning to make better summaries
 basically finetuning bart.

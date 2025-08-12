@@ -1,0 +1,20 @@
+new code with chunking
+unfinetuned 20 rows
+📊 Baseline ROUGE: {'rouge1': 0.334913881566854, 'rouge2': 0.08066865282604058,
+			 'rougeL': 0.1893955248573083, 'rougeLsum': 0.22689150915616252}
+📊 Baseline BERTScore: {'precision': 0.8589, 'recall': 0.8548, 'f1': 0.8568}
+
+
+finetuned 21 rows
+📊 Finetuned ROUGE: {'rouge1': 0.3547516590586728, 'rouge2': 0.10216875740371685,
+			 'rougeL': 0.2105601466972966, 'rougeLsum': 0.2631538636213034}
+📊 Finetuned BERTScore: {'precision': 0.8687, 'recall': 0.8679, 'f1': 0.8683}
+
+after feeding 4000 rows of data
+📊 Baseline ROUGE: {'rouge1': 0.29208831162610704, 'rouge2': 0.06298202050562325
+			, 'rougeL': 0.17105664683138228, 'rougeLsum': 0.2009150160462877}
+📊 Baseline BERTScore: {'precision': 0.85, 'recall': 0.8474, 'f1': 0.8487}
+
+📊 Finetuned ROUGE: {'rouge1': 0.5015079748985711, 'rouge2': 0.2009015794990769, 
+			'rougeL': 0.30756104735837697, 'rougeLsum': 0.37530642725495517}
+📊 Finetuned BERTScore: {'precision': 0.8921, 'recall': 0.8915, 'f1': 0.8917}
