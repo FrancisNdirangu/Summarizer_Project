@@ -224,19 +224,6 @@ curl -X POST http://127.0.0.1:8080/api/summarize-url   -H "Content-Type: applica
 
 ---
 
-## Project Structure
-
-```
-.
-├── internal_api/         # FastAPI app (summarization engine)
-├── public_api/           # Optional API gateway (X-API-Key)
-├── ui/                   # Streamlit app (3 tabs: Text, PDF, URL)
-├── model/                # Fine-tuned model (local path)
-├── data/                 # (Optional) datasets, artifacts
-├── notebooks/            # (Optional) exploration & evaluation
-├── requirements.txt
-└── README.md
-```
 
 ---
 

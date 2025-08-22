@@ -107,7 +107,17 @@ from bs4 import BeautifulSoup
 import re
 
 # Load model
-MODEL_DIR = "./model"
+# MODEL_DIR = "model"
+from pathlib import Path
+MODEL_DIR = Path(__file__).parent / "model"
+
+if not MODEL_DIR.exists():
+    raise RuntimeError(f"Model folder not found at {MODEL_DIR}. "
+                       "Put your saved HF model there, or set MODEL_ID to a hub model.")
+
+# tokenizer = AutoTokenizer.from_pretrained(str(MODEL_DIR))
+# model = AutoModelForSeq2SeqLM.from_pretrained(str(MODEL_DIR))
+
 tokenizer = AutoTokenizer.from_pretrained(MODEL_DIR)
 model = AutoModelForSeq2SeqLM.from_pretrained(MODEL_DIR)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
